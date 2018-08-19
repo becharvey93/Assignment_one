@@ -3,10 +3,16 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { LoginComponent } from './login/login.component';
+import { GroupsComponent } from './groups/groups.component';
+import { ChannelsComponent } from './channels/channels.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    LoginComponent,
+    GroupsComponent,
+    ChannelsComponent
   ],
   imports: [
     BrowserModule,
