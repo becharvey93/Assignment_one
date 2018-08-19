@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { GroupsComponent } from './groups/groups.component';
 import { ChannelsComponent } from './channels/channels.component';
+import { MenuComponent } from './menu/menu.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     GroupsComponent,
-    ChannelsComponent
+    ChannelsComponent,
+    MenuComponent
   ],
   imports: [
     BrowserModule,
