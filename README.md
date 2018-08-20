@@ -9,7 +9,7 @@ The repository is used as version control after significant changes made to the 
 
 After changes are successfully implemented they are pushed to the master branch. This means if an error comes up that is difficult to identify there is something to rollback to. 
 
-h1. Components
+Components
 
 The components created in this solution were the menu, login, groups and channels. 
 
