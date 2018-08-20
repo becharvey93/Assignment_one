@@ -21,15 +21,23 @@ export class LoginComponent implements OnInit {
     if (this.username == "super" && this.password == "123"){
       alert('You are logged in as the Super Admin.');
       this.router.navigateByUrl('/groups');
+      localStorage.setItem("login-type", "super"); 
+      localStorage.setItem("username", this.username);
     }
     else if(this.username == "group" && this.password == "123"){
       alert('You are logged in as the Group Admin');
       this.router.navigateByUrl('/groups');
+      localStorage.setItem("login-type", "group");
+      localStorage.setItem("username", this.username)
     }
     else if (this.username == "correctusername" && this.password =="correctpassword"){
       this.router.navigateByUrl('/groups');
+      localStorage.setItem("login-type", "general");
+      localStorage.setItem("username", this.username)
     }else{
-      alert('Username and password were incorrect');
+      alert('Username and password were incorrect. Logged in as guest.');
+      localStorage.setItem("login-type", "Guest");
+      localStorage.setItem("username", this.username);
     }  
     }
 
