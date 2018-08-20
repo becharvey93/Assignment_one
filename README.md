@@ -14,3 +14,17 @@ Components
 The components created in this solution were the menu, login, groups and channels. 
 
 The user must login, where they can then access their groups and channels. 
+
+For testing purposes, the current logins for testing different kinds of user are: 
+
+generic user
+login: correctusername
+password: correctpassword
+
+group admin
+login: group
+password: 123
+
+super admin
+login: super
+password 123
