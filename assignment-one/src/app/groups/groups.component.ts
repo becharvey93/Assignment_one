@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class GroupsComponent implements OnInit {
   username: string;
   router: any;
+  newgroupname: any;
 
   constructor() { }
 
@@ -16,9 +17,10 @@ export class GroupsComponent implements OnInit {
 
   loginUser(event){
     event.preventDefault();
-    if (this.username == "super"){
-      alert('You are logged in as the Super Admin.');
-      this.router.navigateByUrl('/groups');
+    var usertype = localStorage.getItem("user-type");
+    if (usertype == "super"){
+      alert('You have created a new group called.' + this.newgroupname);
+      localStorage.setItem("groupname", this.newgroupname);
     }
     else{
       alert('You do not have permission to create groups');
