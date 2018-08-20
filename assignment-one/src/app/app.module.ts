@@ -8,6 +8,7 @@ import { GroupsComponent } from './groups/groups.component';
 import { ChannelsComponent } from './channels/channels.component';
 import { MenuComponent } from './menu/menu.component';
 import { FormsModule } from '@angular/forms';
+import { LogoutComponent } from './logout/logout.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { FormsModule } from '@angular/forms';
     LoginComponent,
     GroupsComponent,
     ChannelsComponent,
-    MenuComponent
+    MenuComponent,
+    LogoutComponent
   ],
   imports: [
     BrowserModule,
