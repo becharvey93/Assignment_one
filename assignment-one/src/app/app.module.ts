@@ -7,6 +7,7 @@ import { LoginComponent } from './login/login.component';
 import { GroupsComponent } from './groups/groups.component';
 import { ChannelsComponent } from './channels/channels.component';
 import { MenuComponent } from './menu/menu.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { MenuComponent } from './menu/menu.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
