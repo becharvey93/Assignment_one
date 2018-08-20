@@ -18,8 +18,13 @@ export class LoginComponent implements OnInit {
 
   loginUser(event){
     event.preventDefault();
-    console.log(this.username);
+    if (this.username == "correctusername" && this.password =="correctpassword"){
+      this.router.navigateByUrl('/groups');
+    }else{
+      alert('Username and password were incorrect');
+    }  
+    }
 
   }
 
-}
+
