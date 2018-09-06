@@ -19,7 +19,7 @@ For testing purposes, the current logins for testing different kinds of user are
 
 generic user
 login: correctusername
-password: correctpassword
+password: password
 
 group admin
 login: group
