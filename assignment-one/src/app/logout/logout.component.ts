@@ -13,7 +13,6 @@ export class LogoutComponent implements OnInit {
   ngOnInit() {
     localStorage.setItem("username", "");
     localStorage.setItem("login-type", "");
-    localStorage.setItem("password", "");
     alert("You have now been logged out");
     this.router.navigateByUrl('/login');
 

@@ -15,11 +15,11 @@ export class GroupsComponent implements OnInit {
   ngOnInit() {
   }
 
-  loginUser(event){
+  createGroup(event){
     event.preventDefault();
     var usertype = localStorage.getItem("user-type");
-    if (usertype == "super"){
-      alert('You have created a new group called.' + this.newgroupname);
+    if (usertype == "super" || "group"){
+      alert('You have created a new group called ' + this.newgroupname);
       localStorage.setItem("groupname", this.newgroupname);
     }
     else{
