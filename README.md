@@ -1,4 +1,3 @@
-﻿#Assignment_one
 #Assignment_one
 
 This repository is for 3813ICT assigment one.
@@ -19,7 +18,7 @@ For testing purposes, the current logins for testing different kinds of user are
 
 generic user
 login: correctusername
-password: correctpassword
+password: password
 
 group admin
 login: group
@@ -28,3 +27,14 @@ password: 123
 super admin
 login: super
 password 123
+
+Data Structures 
+
+On the server side there are users that have a username, password, login type
+When a user logs in, their username and login type are stored locally on the client side. 
+
+Users can also belong to many groups. 
+They can access a group when their name is stored under a group
+
+Channels belong to one group. 
+They can be accessed, viewed and posted to by any users that belong to the same group the channel does.
