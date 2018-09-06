@@ -11,9 +11,18 @@ import { Router } from '@angular/router';
 export class LoginComponent implements OnInit {
   username:string ='';
   password:string ='';
+  newusername:string ='';
+  newpassword:string = '';
   constructor(private router:Router, private form:FormsModule) { }
+  
 
   ngOnInit() {
+    console.log("Testing if dom is ready");
+
+    if (typeof(Storage) !== "undefined") {
+      console.log('storage ready');
+
+    }
   }
 
   loginUser(event){
@@ -35,11 +44,19 @@ export class LoginComponent implements OnInit {
       localStorage.setItem("login-type", "general");
       localStorage.setItem("username", this.username)
     }else{
-      alert('Username and password were incorrect. Logged in as guest.');
-      localStorage.setItem("login-type", "Guest");
-      localStorage.setItem("username", this.username);
+      alert('Username and password were incorrect. Please try again or create new user.');
     }  
     }
+
+  createUser(event){
+    event.preventDefault(); 
+    if(this.newusername != '' && this.newpassword != ''){
+      localStorage.setItem("login-type", "general");
+      localStorage.setItem("username", this.newusername);
+      localStorage.setItem("password", this.password);
+      this.router.navigateByUrl('/groups');
+    }
+  }
 
   }
 

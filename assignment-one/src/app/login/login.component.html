@@ -8,3 +8,14 @@
 </div>
 
 
+
+<h2>Create New User</h2>
+<div>
+  <form (submit)="createUser($event)">
+    <input type="email" placeholder="Username" [(ngModel)]='newusername' name="newusername" id="newusername">
+    <input type="password" placeholder="Password" [(ngModel)]='newpassword' name="newpassword" id="newpassword">
+    <button type="submit">Submit</button>
+  </form>
+  </div>
+
+
